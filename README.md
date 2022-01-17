@@ -12,7 +12,7 @@ In this we use HTML Properties like:
 3.Id
 4.Div
 5.Section
-end more......
+And more......
 
 And also use CSS properties like:
 1.Margin
