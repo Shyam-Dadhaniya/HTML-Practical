@@ -2,7 +2,7 @@
  
 # Flipkart Home Page
 
-#####This practical is base on HTML & CSS only.
+##### This practical is base on HTML & CSS only.
 
 In this Practical I try to use HTML CSS which i learn previously.
 
