@@ -294,7 +294,7 @@ select{
 .ad{
     box-shadow: rgb(177 174 174) 0px 0px 5px 1px;
     padding: 5px;
-    margin: 10px 5px;
+    margin: 10px;
     border-radius: 1px;
 }
 
@@ -348,3 +348,19 @@ select{
     }
 }
 
+@media only screen and (max-width: 640px){
+    .crow {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .slider-icon{
+        display: none;
+    }
+    .ad{
+        flex-grow: 1;
+    }
+    .ad img{
+        width: 100%;
+        max-width: 100%;
+    }
+}
