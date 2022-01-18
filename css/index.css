@@ -2,7 +2,7 @@
 body{
     margin: 0%;
     padding: 0%;
-    font-family: 'Roboto', sans-serif;;
+    font-family: 'Roboto', sans-serif;
 }
 :root {
     --blue: #2874f0;
@@ -12,13 +12,17 @@ a{
     text-decoration: none;
 }
 
+.main-content{
+    background-color: #F1F3F6;
+}
  /* Header Start */
 header{
     background-color: var(--blue);
     width: 100%;
     height: auto;
     position: fixed;
-    top: 0;   
+    top: 0;
+    z-index: 2;   
 }
 
 .nav{
@@ -47,6 +51,10 @@ header{
 
 .fa-search{
     color: var(--blue);
+}
+
+.fa-shopping-cart{
+    margin-right: 5px;
 }
 
 .search input{
@@ -82,6 +90,12 @@ header{
 .text-white{
     color: white;
 }
+
+.right-nav .text select{
+    background-color: var(--blue);
+    color: white;
+}
+
 
 /* Heading End */
 
@@ -119,6 +133,17 @@ header{
     margin-bottom: 10px;
 }
 
+.text .fa-caret-down{
+    margin-left: 5px;
+}
+
+select{
+    border: none;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    outline: unset;
+}
 /* Catagorys End */
 
 
@@ -126,7 +151,7 @@ header{
 
 .deals{
     display: flex;
-    margin-top: 15px;
+    padding-top: 15px;
 }
 
 .ad img{
@@ -138,15 +163,25 @@ header{
 /* Deal End */
 
 /* Card Start */
+.margin-top{
+    margin-top: 10px;
+}
+
+.margin-bottom{
+    margin-bottom: 10px;
+}
 
 .card{
-    box-shadow: rgb(177,174,174) 0px 0px 5px 1px;
+    box-shadow: rgba(177,174,174,0.21) 0px 0px 5px 1px;
     padding: 10px 0px;
-    margin: 10px 5px;
-    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 1px;
     flex-grow: 1;
     overflow: auto;
     padding: 0px 0px 10px 0px;
+    position: relative;
+    background-color: white;
 
 }
 
@@ -235,8 +270,23 @@ header{
 
 .product-content{
     margin: 0 15px;
+    padding: 10px 0;
 }
 
+.slider-icon{
+    position: absolute;
+    right: 0;
+    background-color: white;
+    box-shadow: rgba(177,174,174,0.45) 0px 0px 5px 1px;
+    padding: 33px 15px;
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+.custom{
+    flex-wrap: wrap;
+    justify-content: center;
+}
 /* Card End */
 
 /* Ad.start */
@@ -245,7 +295,7 @@ header{
     box-shadow: rgb(177 174 174) 0px 0px 5px 1px;
     padding: 5px;
     margin: 10px 5px;
-    border-radius: 5px;
+    border-radius: 1px;
 }
 
 
@@ -270,8 +320,31 @@ header{
     }
 }
 
-@media only screen and (max-width: 576px){
+@media only screen and (max-width: 398px){
     .heading-left h5 {
         margin-top: 10px
     }
 }
+
+@media only screen and (min-width: 399px) and (max-width: 576px){
+    .heading-left h5 {
+        margin-top: 22px
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .search input {
+        width: 440px;
+    }
+
+    .custom{
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .search input {
+        width: 540px;
+    }
+}
+
